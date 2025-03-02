@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-blue-100">
+    <header>
+      <div
+        class="max-w-screen-2xl mx-auto navbar bg-white rounded-xl shadow-sm flex justify-between p-5"
+      >
+        <div class="flex">
+          <img class="w-11" src="img/logo.png" alt="" />
+          <a class="btn btn-ghost text-2xl"
+            >Dev <span class="text-2xl font-bold">Board</span></a
+          >
+        </div>
+        <div
+          id="back-btn"
+          class="bg-blue-500 px-2 py-1 rounded-lg text-base text-white mt-4 mb-4 cursor-pointer"
+        >
+          Back to Desk
+        </div>
+      </div>
+    </header>
+    <section class="max-w-screen-2xl mx-auto">
+      <div>
+        <h2 class="text-2xl font-bold flex justify-center mt-8 mb-8">Blogs</h2>
+        <div class="bg-white p-6 rounded-lg mb-5">
+          <h2 class="text-2xl font-bold mb-3">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <hr class="border-dashed text-blue-200" />
+          <p class="text-gray-400">
+            There are many ways to select elements in the DOM like - selecting
+            by ID, selecting by classname, by tag name, by using query selector,
+            body element, active element, by name attribute.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mb-5">
+          <h2 class="text-2xl font-bold mb-3">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <hr class="border-dashed text-blue-200" />
+          <p class="text-gray-400">
+            innerHTML → is used to insert or read HTML tags inside an element.
+            innerText → is used for visible text and ignore hidden elements.
+            textContent → is used for all text even hidden and no HTML
+            interpretation.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mb-5">
+          <h2 class="text-2xl font-bold mb-3">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <hr class="border-dashed text-blue-200" />
+          <p class="text-gray-400">
+            Event delegation is a technique in JavaScript where a parent element
+            listens for events on its child elements, even if they are
+            dynamically added later. Instead of adding individual event
+            listeners to each child, we add one listener to the parent.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mb-5">
+          <h2 class="text-2xl font-bold mb-3">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <hr class="border-dashed text-blue-200" />
+          <p class="text-gray-400">
+            Event bubbling is a process where an event starts from the target
+            element and propagates (bubbles) up through its parent elements to
+            the root (document).
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg mb-5">
+          <h2 class="text-2xl font-bold mb-3">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <hr class="border-dashed text-blue-200" />
+          <p class="text-gray-400">
+            To create elements we should use (document.createElement), to add
+            appendChild() (Add at the End) and prepend() (Add at the Beginning),
+            to remove we should use element.remove() using JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script/discover.js"></script>
+  </body>
+</html>
